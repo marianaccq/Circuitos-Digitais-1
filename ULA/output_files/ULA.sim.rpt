@@ -1,0 +1,358 @@
+Simulator report for ULA
+Thu Jun 13 13:37:32 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 151 nodes    ;
+; Simulation Coverage         ;      70.20 % ;
+; Total Number of Transitions ; 450          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                  ;
++--------------------------------------------------------------------------------------------+------------------------+---------------+
+; Option                                                                                     ; Setting                ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------+---------------+
+; Simulation mode                                                                            ; Functional             ; Timing        ;
+; Start time                                                                                 ; 0 ns                   ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                    ;               ;
+; Vector input source                                                                        ; E:/newULA/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                     ; On            ;
+; Check outputs                                                                              ; Off                    ; Off           ;
+; Report simulation coverage                                                                 ; On                     ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                     ; On            ;
+; Display missing 1-value coverage report                                                    ; On                     ; On            ;
+; Display missing 0-value coverage report                                                    ; On                     ; On            ;
+; Detect setup and hold time violations                                                      ; Off                    ; Off           ;
+; Detect glitches                                                                            ; Off                    ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                    ; Off           ;
+; Generate Signal Activity File                                                              ; Off                    ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                    ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                    ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                     ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE             ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                    ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                    ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                   ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      70.20 % ;
+; Total nodes checked                                 ; 151          ;
+; Total output ports checked                          ; 151          ;
+; Total output ports with complete 1/0-value coverage ; 106          ;
+; Total output ports with no 1/0-value coverage       ; 45           ;
+; Total output ports with no 1-value coverage         ; 45           ;
+; Total output ports with no 0-value coverage         ; 45           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------+
+; Complete 1/0-Value Coverage                            ;
++------------------+------------------+------------------+
+; Node Name        ; Output Port Name ; Output Port Type ;
++------------------+------------------+------------------+
+; |ULA|c0          ; |ULA|c0          ; out0             ;
+; |ULA|somando~0   ; |ULA|somando~0   ; out0             ;
+; |ULA|somando[1]  ; |ULA|somando[1]  ; out0             ;
+; |ULA|c1~0        ; |ULA|c1~0        ; out0             ;
+; |ULA|c1~1        ; |ULA|c1~1        ; out0             ;
+; |ULA|c1~2        ; |ULA|c1~2        ; out0             ;
+; |ULA|c1~3        ; |ULA|c1~3        ; out0             ;
+; |ULA|c1          ; |ULA|c1          ; out0             ;
+; |ULA|somando[2]  ; |ULA|somando[2]  ; out0             ;
+; |ULA|c2~0        ; |ULA|c2~0        ; out0             ;
+; |ULA|c2~1        ; |ULA|c2~1        ; out0             ;
+; |ULA|c2~2        ; |ULA|c2~2        ; out0             ;
+; |ULA|c2~3        ; |ULA|c2~3        ; out0             ;
+; |ULA|c2          ; |ULA|c2          ; out0             ;
+; |ULA|somando~2   ; |ULA|somando~2   ; out0             ;
+; |ULA|somando[3]  ; |ULA|somando[3]  ; out0             ;
+; |ULA|c3~0        ; |ULA|c3~0        ; out0             ;
+; |ULA|c3~1        ; |ULA|c3~1        ; out0             ;
+; |ULA|c3~2        ; |ULA|c3~2        ; out0             ;
+; |ULA|c3~3        ; |ULA|c3~3        ; out0             ;
+; |ULA|c3          ; |ULA|c3          ; out0             ;
+; |ULA|somando~3   ; |ULA|somando~3   ; out0             ;
+; |ULA|somando[4]  ; |ULA|somando[4]  ; out0             ;
+; |ULA|c4~0        ; |ULA|c4~0        ; out0             ;
+; |ULA|c4~1        ; |ULA|c4~1        ; out0             ;
+; |ULA|c4~2        ; |ULA|c4~2        ; out0             ;
+; |ULA|c4~3        ; |ULA|c4~3        ; out0             ;
+; |ULA|c4          ; |ULA|c4          ; out0             ;
+; |ULA|somando~4   ; |ULA|somando~4   ; out0             ;
+; |ULA|somando[5]  ; |ULA|somando[5]  ; out0             ;
+; |ULA|c5~0        ; |ULA|c5~0        ; out0             ;
+; |ULA|c5~1        ; |ULA|c5~1        ; out0             ;
+; |ULA|c5~2        ; |ULA|c5~2        ; out0             ;
+; |ULA|c5~3        ; |ULA|c5~3        ; out0             ;
+; |ULA|c5          ; |ULA|c5          ; out0             ;
+; |ULA|somando~5   ; |ULA|somando~5   ; out0             ;
+; |ULA|somando[6]  ; |ULA|somando[6]  ; out0             ;
+; |ULA|c6~0        ; |ULA|c6~0        ; out0             ;
+; |ULA|c6~1        ; |ULA|c6~1        ; out0             ;
+; |ULA|c6~2        ; |ULA|c6~2        ; out0             ;
+; |ULA|c6~3        ; |ULA|c6~3        ; out0             ;
+; |ULA|c6          ; |ULA|c6          ; out0             ;
+; |ULA|somando~6   ; |ULA|somando~6   ; out0             ;
+; |ULA|somando[7]  ; |ULA|somando[7]  ; out0             ;
+; |ULA|saida~40    ; |ULA|saida~40    ; out0             ;
+; |ULA|saida~41    ; |ULA|saida~41    ; out0             ;
+; |ULA|saida~42    ; |ULA|saida~42    ; out0             ;
+; |ULA|saida~43    ; |ULA|saida~43    ; out0             ;
+; |ULA|saida~44    ; |ULA|saida~44    ; out0             ;
+; |ULA|saida~45    ; |ULA|saida~45    ; out0             ;
+; |ULA|saida~46    ; |ULA|saida~46    ; out0             ;
+; |ULA|saida~47    ; |ULA|saida~47    ; out0             ;
+; |ULA|saida~48    ; |ULA|saida~48    ; out0             ;
+; |ULA|saida~49    ; |ULA|saida~49    ; out0             ;
+; |ULA|saida~50    ; |ULA|saida~50    ; out0             ;
+; |ULA|saida~51    ; |ULA|saida~51    ; out0             ;
+; |ULA|saida~52    ; |ULA|saida~52    ; out0             ;
+; |ULA|saida~53    ; |ULA|saida~53    ; out0             ;
+; |ULA|saida~54    ; |ULA|saida~54    ; out0             ;
+; |ULA|saida~55    ; |ULA|saida~55    ; out0             ;
+; |ULA|zero~0      ; |ULA|zero~0      ; out0             ;
+; |ULA|zero~1      ; |ULA|zero~1      ; out0             ;
+; |ULA|zero~2      ; |ULA|zero~2      ; out0             ;
+; |ULA|zero~3      ; |ULA|zero~3      ; out0             ;
+; |ULA|zero~4      ; |ULA|zero~4      ; out0             ;
+; |ULA|zero~5      ; |ULA|zero~5      ; out0             ;
+; |ULA|zero~6      ; |ULA|zero~6      ; out0             ;
+; |ULA|saida[1]~33 ; |ULA|saida[1]~33 ; out              ;
+; |ULA|saida[2]~34 ; |ULA|saida[2]~34 ; out              ;
+; |ULA|saida[3]~35 ; |ULA|saida[3]~35 ; out              ;
+; |ULA|saida[4]~36 ; |ULA|saida[4]~36 ; out              ;
+; |ULA|saida[5]~37 ; |ULA|saida[5]~37 ; out              ;
+; |ULA|saida[6]~38 ; |ULA|saida[6]~38 ; out              ;
+; |ULA|saida[7]~39 ; |ULA|saida[7]~39 ; out              ;
+; |ULA|inX[0]      ; |ULA|inX[0]      ; out              ;
+; |ULA|inX[1]      ; |ULA|inX[1]      ; out              ;
+; |ULA|inX[2]      ; |ULA|inX[2]      ; out              ;
+; |ULA|inX[3]      ; |ULA|inX[3]      ; out              ;
+; |ULA|inX[4]      ; |ULA|inX[4]      ; out              ;
+; |ULA|inX[5]      ; |ULA|inX[5]      ; out              ;
+; |ULA|inX[6]      ; |ULA|inX[6]      ; out              ;
+; |ULA|inX[7]      ; |ULA|inX[7]      ; out              ;
+; |ULA|inY[0]      ; |ULA|inY[0]      ; out              ;
+; |ULA|inY[1]      ; |ULA|inY[1]      ; out              ;
+; |ULA|inY[2]      ; |ULA|inY[2]      ; out              ;
+; |ULA|inY[3]      ; |ULA|inY[3]      ; out              ;
+; |ULA|inY[4]      ; |ULA|inY[4]      ; out              ;
+; |ULA|inY[5]      ; |ULA|inY[5]      ; out              ;
+; |ULA|inY[6]      ; |ULA|inY[6]      ; out              ;
+; |ULA|inY[7]      ; |ULA|inY[7]      ; out              ;
+; |ULA|oULA[1]     ; |ULA|oULA[1]     ; pin_out          ;
+; |ULA|oULA[2]     ; |ULA|oULA[2]     ; pin_out          ;
+; |ULA|oULA[3]     ; |ULA|oULA[3]     ; pin_out          ;
+; |ULA|oULA[4]     ; |ULA|oULA[4]     ; pin_out          ;
+; |ULA|oULA[5]     ; |ULA|oULA[5]     ; pin_out          ;
+; |ULA|oULA[6]     ; |ULA|oULA[6]     ; pin_out          ;
+; |ULA|oULA[7]     ; |ULA|oULA[7]     ; pin_out          ;
+; |ULA|zero        ; |ULA|zero        ; pin_out          ;
+; |ULA|Negativo    ; |ULA|Negativo    ; pin_out          ;
+; |ULA|oULA[7]~0   ; |ULA|oULA[7]~0   ; out0             ;
+; |ULA|oULA[6]~1   ; |ULA|oULA[6]~1   ; out0             ;
+; |ULA|oULA[5]~2   ; |ULA|oULA[5]~2   ; out0             ;
+; |ULA|oULA[4]~3   ; |ULA|oULA[4]~3   ; out0             ;
+; |ULA|oULA[3]~4   ; |ULA|oULA[3]~4   ; out0             ;
+; |ULA|oULA[2]~5   ; |ULA|oULA[2]~5   ; out0             ;
+; |ULA|oULA[1]~6   ; |ULA|oULA[1]~6   ; out0             ;
++------------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------+
+; Missing 1-Value Coverage                               ;
++------------------+------------------+------------------+
+; Node Name        ; Output Port Name ; Output Port Type ;
++------------------+------------------+------------------+
+; |ULA|saida[1]~0  ; |ULA|saida[1]~0  ; out              ;
+; |ULA|somando[0]  ; |ULA|somando[0]  ; out0             ;
+; |ULA|somando~1   ; |ULA|somando~1   ; out0             ;
+; |ULA|saida[0]~1  ; |ULA|saida[0]~1  ; out              ;
+; |ULA|saida[2]~2  ; |ULA|saida[2]~2  ; out              ;
+; |ULA|saida[3]~3  ; |ULA|saida[3]~3  ; out              ;
+; |ULA|saida[4]~4  ; |ULA|saida[4]~4  ; out              ;
+; |ULA|saida[5]~5  ; |ULA|saida[5]~5  ; out              ;
+; |ULA|saida[6]~6  ; |ULA|saida[6]~6  ; out              ;
+; |ULA|saida[7]~7  ; |ULA|saida[7]~7  ; out              ;
+; |ULA|saida[0]~8  ; |ULA|saida[0]~8  ; out              ;
+; |ULA|saida[1]~9  ; |ULA|saida[1]~9  ; out              ;
+; |ULA|saida[2]~10 ; |ULA|saida[2]~10 ; out              ;
+; |ULA|saida[3]~11 ; |ULA|saida[3]~11 ; out              ;
+; |ULA|saida[4]~12 ; |ULA|saida[4]~12 ; out              ;
+; |ULA|saida[5]~13 ; |ULA|saida[5]~13 ; out              ;
+; |ULA|saida[6]~14 ; |ULA|saida[6]~14 ; out              ;
+; |ULA|saida[7]~15 ; |ULA|saida[7]~15 ; out              ;
+; |ULA|saida[0]~16 ; |ULA|saida[0]~16 ; out              ;
+; |ULA|saida[1]~17 ; |ULA|saida[1]~17 ; out              ;
+; |ULA|saida[2]~18 ; |ULA|saida[2]~18 ; out              ;
+; |ULA|saida[3]~19 ; |ULA|saida[3]~19 ; out              ;
+; |ULA|saida[4]~20 ; |ULA|saida[4]~20 ; out              ;
+; |ULA|saida[5]~21 ; |ULA|saida[5]~21 ; out              ;
+; |ULA|saida[6]~22 ; |ULA|saida[6]~22 ; out              ;
+; |ULA|saida[7]~23 ; |ULA|saida[7]~23 ; out              ;
+; |ULA|saida[0]~24 ; |ULA|saida[0]~24 ; out              ;
+; |ULA|saida[1]~25 ; |ULA|saida[1]~25 ; out              ;
+; |ULA|saida[2]~26 ; |ULA|saida[2]~26 ; out              ;
+; |ULA|saida[3]~27 ; |ULA|saida[3]~27 ; out              ;
+; |ULA|saida[4]~28 ; |ULA|saida[4]~28 ; out              ;
+; |ULA|saida[5]~29 ; |ULA|saida[5]~29 ; out              ;
+; |ULA|saida[6]~30 ; |ULA|saida[6]~30 ; out              ;
+; |ULA|saida[7]~31 ; |ULA|saida[7]~31 ; out              ;
+; |ULA|saida[0]~32 ; |ULA|saida[0]~32 ; out              ;
+; |ULA|selULA[0]   ; |ULA|selULA[0]   ; out              ;
+; |ULA|selULA[1]   ; |ULA|selULA[1]   ; out              ;
+; |ULA|selULA[2]   ; |ULA|selULA[2]   ; out              ;
+; |ULA|oULA[0]     ; |ULA|oULA[0]     ; pin_out          ;
+; |ULA|oULA[0]~7   ; |ULA|oULA[0]~7   ; out0             ;
+; |ULA|Equal0~0    ; |ULA|Equal0~0    ; out0             ;
+; |ULA|Equal1~0    ; |ULA|Equal1~0    ; out0             ;
+; |ULA|Equal2~0    ; |ULA|Equal2~0    ; out0             ;
+; |ULA|Equal3~0    ; |ULA|Equal3~0    ; out0             ;
+; |ULA|Equal4~0    ; |ULA|Equal4~0    ; out0             ;
++------------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------+
+; Missing 0-Value Coverage                               ;
++------------------+------------------+------------------+
+; Node Name        ; Output Port Name ; Output Port Type ;
++------------------+------------------+------------------+
+; |ULA|saida[1]~0  ; |ULA|saida[1]~0  ; out              ;
+; |ULA|somando[0]  ; |ULA|somando[0]  ; out0             ;
+; |ULA|somando~1   ; |ULA|somando~1   ; out0             ;
+; |ULA|saida[0]~1  ; |ULA|saida[0]~1  ; out              ;
+; |ULA|saida[2]~2  ; |ULA|saida[2]~2  ; out              ;
+; |ULA|saida[3]~3  ; |ULA|saida[3]~3  ; out              ;
+; |ULA|saida[4]~4  ; |ULA|saida[4]~4  ; out              ;
+; |ULA|saida[5]~5  ; |ULA|saida[5]~5  ; out              ;
+; |ULA|saida[6]~6  ; |ULA|saida[6]~6  ; out              ;
+; |ULA|saida[7]~7  ; |ULA|saida[7]~7  ; out              ;
+; |ULA|saida[0]~8  ; |ULA|saida[0]~8  ; out              ;
+; |ULA|saida[1]~9  ; |ULA|saida[1]~9  ; out              ;
+; |ULA|saida[2]~10 ; |ULA|saida[2]~10 ; out              ;
+; |ULA|saida[3]~11 ; |ULA|saida[3]~11 ; out              ;
+; |ULA|saida[4]~12 ; |ULA|saida[4]~12 ; out              ;
+; |ULA|saida[5]~13 ; |ULA|saida[5]~13 ; out              ;
+; |ULA|saida[6]~14 ; |ULA|saida[6]~14 ; out              ;
+; |ULA|saida[7]~15 ; |ULA|saida[7]~15 ; out              ;
+; |ULA|saida[0]~16 ; |ULA|saida[0]~16 ; out              ;
+; |ULA|saida[1]~17 ; |ULA|saida[1]~17 ; out              ;
+; |ULA|saida[2]~18 ; |ULA|saida[2]~18 ; out              ;
+; |ULA|saida[3]~19 ; |ULA|saida[3]~19 ; out              ;
+; |ULA|saida[4]~20 ; |ULA|saida[4]~20 ; out              ;
+; |ULA|saida[5]~21 ; |ULA|saida[5]~21 ; out              ;
+; |ULA|saida[6]~22 ; |ULA|saida[6]~22 ; out              ;
+; |ULA|saida[7]~23 ; |ULA|saida[7]~23 ; out              ;
+; |ULA|saida[0]~24 ; |ULA|saida[0]~24 ; out              ;
+; |ULA|saida[1]~25 ; |ULA|saida[1]~25 ; out              ;
+; |ULA|saida[2]~26 ; |ULA|saida[2]~26 ; out              ;
+; |ULA|saida[3]~27 ; |ULA|saida[3]~27 ; out              ;
+; |ULA|saida[4]~28 ; |ULA|saida[4]~28 ; out              ;
+; |ULA|saida[5]~29 ; |ULA|saida[5]~29 ; out              ;
+; |ULA|saida[6]~30 ; |ULA|saida[6]~30 ; out              ;
+; |ULA|saida[7]~31 ; |ULA|saida[7]~31 ; out              ;
+; |ULA|saida[0]~32 ; |ULA|saida[0]~32 ; out              ;
+; |ULA|selULA[0]   ; |ULA|selULA[0]   ; out              ;
+; |ULA|selULA[1]   ; |ULA|selULA[1]   ; out              ;
+; |ULA|selULA[2]   ; |ULA|selULA[2]   ; out              ;
+; |ULA|oULA[0]     ; |ULA|oULA[0]     ; pin_out          ;
+; |ULA|oULA[0]~7   ; |ULA|oULA[0]~7   ; out0             ;
+; |ULA|Equal0~0    ; |ULA|Equal0~0    ; out0             ;
+; |ULA|Equal1~0    ; |ULA|Equal1~0    ; out0             ;
+; |ULA|Equal2~0    ; |ULA|Equal2~0    ; out0             ;
+; |ULA|Equal3~0    ; |ULA|Equal3~0    ; out0             ;
+; |ULA|Equal4~0    ; |ULA|Equal4~0    ; out0             ;
++------------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Jun 13 13:37:32 2019
+Info: Command: quartus_sim --simulation_results_format=VWF ULA -c ULA
+Info (324025): Using vector source file "E:/newULA/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      70.20 %
+Info (328052): Number of transitions in simulation is 450
+Info (324045): Vector file ULA.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4463 megabytes
+    Info: Processing ended: Thu Jun 13 13:37:32 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
